@@ -1,0 +1,32 @@
+@import"../../App.scss";
+
+.navbar{
+    height: 10vh;
+    font-size: 2.5rem;
+    background-color: $color-black;
+    background-image: linear-gradient(115deg, $color-black 0%, $color-primary 54%);
+}
+
+.navbar-brand{
+    font-family: 'Sedgwick Ave Display', cursive, serif;
+    font-size: 4rem !important; 
+    background-color: $color-primary;/* Fallback: Set a background color. */
+  background-image: linear-gradient(45deg,$color-white, $color-primary );
+  background-size: 100%;
+  background-repeat: repeat;
+
+  /* Use the text as a mask for the background. */
+  /* This will show the gradient as a text color rather than element bg. */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+    
+}
+.nav-link{
+&:link,
+&:visited {
+  color: $color-white;
+  text-decoration: none;
+}
+}

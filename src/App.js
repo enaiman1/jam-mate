@@ -1,6 +1,6 @@
 import React from 'react';
 import Landing from "./pages/Landing/Landing"
-import Navbar from './components/Navbar/Navbar'
+import Navbar from "./components/Navbar/Navbar"
 import './App.scss';
 
 function App() {

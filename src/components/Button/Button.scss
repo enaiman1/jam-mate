@@ -1,0 +1,66 @@
+@import "../../App.scss";
+@import "../../Animation.scss";
+
+
+.mbtn {
+    &,
+      &:link,
+      &:visited {
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 1.5rem 4rem;
+        display: inline-block;
+        border-radius: 3rem  0 3rem 0;
+        transition: all 0.2s;
+        position: relative;
+        font-size: 2rem;
+        
+  
+        // change for the <button> element
+        border:none;
+        cursor: pointer;
+
+      }
+  
+      &:hover {
+          transform: translateY(-3px);
+          box-shadow: 0 2rem 3rem rgba($color-black, .2);
+          background-color:$color-white ;
+    
+          &::after {
+            transform: scaleX(1.4) scaleY(1.6);
+            opacity: 0;
+          }
+      }
+    
+      &:active,
+      &:focus {
+        outline: none;
+          transform: translateY(-1px);
+          box-shadow: 0 1.5rem 2rem rgba($color-black, .2)
+      }
+    
+      &--white {
+        background-color: $color-white;
+        // background-image: linear-gradient(45deg, $color-white 0%, $color-primary 54%);
+        color: $color-black;
+        &::after {
+          background-color: $color-white;
+          background-image: linear-gradient(45deg, $color-white 0%, $color-primary 54%);
+        }
+      }
+    
+      &::after {
+        content: "";
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        border-radius: 3rem  0 3rem 0;;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: all 0.4s;
+      }
+    
+    }
