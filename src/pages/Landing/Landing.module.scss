@@ -1,0 +1,68 @@
+@import"../../App.scss";
+
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    overflow: hidden;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 85% 100%, 0 16%);
+  
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      z-index: 1;
+    }
+  
+    &__textBox {
+      position: absolute;
+      width: 90%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      z-index: 10; 
+    }
+  
+    &__buttonBox{
+      position: absolute;
+      z-index: 10;
+      bottom: 10%;
+      left: 52%;
+      transform: translate(-50%, -50%);
+    }
+  
+    & Video {
+      min-width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  
+  
+  // text, logo
+  .heading__primary {
+    text-align: center;
+  }
+  
+  .main__heading{
+    text-transform: uppercase;
+    color:$color-white;
+    backface-visibility: hidden;
+    margin-bottom: 6rem;
+    font-family: 'Sedgwick Ave Display', cursive, serif;
+    font-size: 10rem;
+  
+    // &__first{
+    // }
+  
+
+  
+  
+  }
