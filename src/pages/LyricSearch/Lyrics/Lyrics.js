@@ -43,7 +43,7 @@ class Lyrics extends Component {
     } else {
       return (
         <>
-          <Link to="/LSbody" className="btn btn-dark btn-sm mb-4">
+          <Link to="/LSindex" className="btn btn-dark btn-sm mb-4">
             Lyric Search
           </Link>
           <div className="card">

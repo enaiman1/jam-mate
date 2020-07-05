@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 import "./Navbar.scss";
 
 
@@ -12,37 +13,29 @@ const Navbar = () => {
 
   <div class="collapse navbar-collapse justify-content-end navLinks">
   <ul className="nav">
+    {/* goes to SBindex.js(Spotify playlist makers) */}
+    <Link to="/SBindex">
   <li className="nav-item">
-    <a className="nav-link active" href="#">Build Jamz</a>
+    <div className="nav-link active">Build Jamz</div>
   </li>
+  </Link>
+
+  {/* goes to LSindex.js (lyric searcher) */}
+  <Link to="/LSindex">
   <li className="nav-item">
-    <a className="nav-link" href="#">Lyricz</a>
+    <div className="nav-link">Lyricz</div>
   </li>
+</Link>
+
+<Link to="/MusicNews">
   <li className="nav-item">
-    <a className="nav-link" href="#">Updatez</a>
+    <div className="nav-link">Updatez</div>
   </li>
+  </Link>
 </ul>
   </div>
 </nav>
 
-
-
-
-
-//     <nav className="navbar navbar-dark bg-dark mb-5">
-//         <span className="navbar-brand mb-0 justify-content-start">Jam Matez</span>
-//         <ul className="nav justify-content-end">
-//   <li className="nav-item">
-//     <a className="nav-link active" href="#">Build Jamz</a>
-//   </li>
-//   <li className="nav-item">
-//     <a className="nav-link" href="#">Lyricz</a>
-//   </li>
-//   <li className="nav-item">
-//     <a className="nav-link" href="#">Updatez</a>
-//   </li>
-// </ul>
-//     </nav>
     )
 }
 

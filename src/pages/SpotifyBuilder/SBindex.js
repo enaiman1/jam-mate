@@ -5,7 +5,7 @@ import Playlist from "./Playlist/Playlist";
 import Spotify from "./util/Spotify";
 import "./SBindex.scss"
 
-class Music extends Component {
+class SBindex extends Component {
   constructor(props) {
     super(props);
 
@@ -98,4 +98,4 @@ class Music extends Component {
   );
 }
 
-export default Music;
+export default SBindex;
