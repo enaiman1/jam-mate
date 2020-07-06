@@ -2,12 +2,21 @@
 
 
 .SearchResults {
-    width: 50%;
-    height: 950px;
+    width: 60%;
+    height: 95rem;
+    margin-right: 2rem;
     overflow-y: scroll;
-    padding: .88rem;
-    background-color: rgba(1, 12, 63, 0.7);
-    box-shadow: 0 4px 2px 2px #000000;
+    padding: 1rem;
+    background-color: rgba($color-primary-dark, 0.7);
+    box-shadow: 0 4px 2px 2px $color-black;
+    text-align: center;
+    font-family: 'Cinzel Decorative', cursive;
+
+    &__title{
+        font-size: 3rem;
+        margin-bottom: 2rem;
+        border-bottom: 1px solid $color-grey-dark-2;
+    }
 
      @media only screen and (max-width: 1020px) {
       width: 100%;

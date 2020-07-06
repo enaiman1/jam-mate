@@ -1,25 +1,27 @@
 @import"../../App.scss";
 
-.App {
+.SBindex {
     height: 100%;
     padding: 0 17% 10% 17%;
-    background-image: url('../../assets/img/background_photo_desktop.jpg');
+    background:   linear-gradient( to bottom,
+    rgba($color-primary,.3),
+    rgba($color-primary,.6)),url('../../assets/img/woman.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
  
     font-weight: 500;
-    color: #fff;
+    color: $color-white;
   }
   
-  .App-playlist {
+  .SBindex-playlist {
     display: flex;
     justify-content: space-between;
     width: 100%;
   }
   
   @media only screen and (max-width: 1020px) {
-    .App-playlist {
+    .SBindex-playlist {
       align-items: center;
       flex-direction: column;
     }

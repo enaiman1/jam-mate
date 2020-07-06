@@ -5,13 +5,15 @@ import "./Navbar.scss";
 
 const Navbar = () => {
     return (
-<nav class="navbar navbar-expand-lg">
+<nav className="navbar navbar-expand-lg">
+  <Link to="/">
 <span className="navbar-brand mb-0 justify-content-start">Jam Matez</span>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
+</Link>
+  <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+    <span className="navbar-toggler-icon"></span>
   </button>
 
-  <div class="collapse navbar-collapse justify-content-end navLinks">
+  <div className="collapse navbar-collapse justify-content-end navLinks">
   <ul className="nav">
     {/* goes to SBindex.js(Spotify playlist makers) */}
     <Link to="/SBindex">

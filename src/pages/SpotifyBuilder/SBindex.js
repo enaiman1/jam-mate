@@ -12,7 +12,7 @@ class SBindex extends Component {
     this.state = {
       searchResults: [],
       playlistTracks: [],
-      playlistName: "My Playlist",
+      playlistName: "Name Your Playlist",
     };
     this.audio = document.createElement('audio')
      
@@ -60,7 +60,7 @@ class SBindex extends Component {
     // after playlist is sent, we reset the playlist to a generic state
     Spotify.savePlaylist(this.state.playlistName, trackUris).then(() => {
       this.setState({
-        playlistName: "New Playlist",
+        playlistName: "Name Your Playlist",
         playlistTracks: [],
       });
     });
@@ -76,9 +76,9 @@ class SBindex extends Component {
   render = () => (
     <div>
       
-      <div className="App">
+      <div className="SBindex">
         <SearchBar onSearch={this.search} />
-        <div className="App-playlist">
+        <div className="SBindex-playlist">
             <SearchResults
               searchResults={this.state.searchResults}
               onAdd={this.addTrack}

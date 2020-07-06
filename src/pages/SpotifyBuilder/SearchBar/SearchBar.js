@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Button from "../../../components/Button/Button"
 import "./SearchBar.scss";
 
 class SearchBar extends Component {
@@ -31,9 +32,9 @@ class SearchBar extends Component {
         onKeyPress={this.handleKeyPress}
         onClick={this.handleClick}
       />
-      <button className="SearchButton" onClick={this.search}>
+      <Button className="SearchButton" onClick={this.search}>
         SEARCH
-      </button>
+      </Button>
     </div>
   );
 }

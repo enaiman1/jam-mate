@@ -28,7 +28,7 @@ class Track extends Component {
     }
   }
 renderPlayButton() {
-  return <button onClick={this.playTrack}>Play</button>;
+  return <button className="track__action" onClick={this.playTrack}>Play</button>;
 }
   render = () => (
     <div className="track">

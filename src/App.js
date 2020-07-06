@@ -10,6 +10,7 @@ import Lyrics from "./pages/LyricSearch/Lyrics/Lyrics";
 import MusicNews from "./pages/MusicNews/MusicNew";
 import NoMatch from "./pages/NoMatch";
 
+
 import './App.scss';
 
 function App() {
@@ -17,7 +18,7 @@ function App() {
     <div className="App">
       <Provider>
 <Router>
-   <Navbar />
+   <Navbar />  
    <Switch>
 <Route exact path="/" component={Landing} />
 <Route exact path="/SBindex" component={SBindex} />
