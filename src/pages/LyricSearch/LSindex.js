@@ -1,13 +1,14 @@
 import React from "react";
-import Tracks from "./Tracks/Tracks";
+import LyricsResult from "./LyricsResult/LyricsResults";
 import Search from "./Search/Search";
+import "./LSindex.scss";
 
 const LSbody = () => {
   return (
     <>
-    <div className="container">
+    <div className="LSindex">
       <Search />
-      <Tracks />
+      <LyricsResult />
       </div>
     </>
   );

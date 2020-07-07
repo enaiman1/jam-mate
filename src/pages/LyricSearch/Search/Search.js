@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import axios from 'axios';
 import { Consumer } from "../context";
+import axios from 'axios';
+import Button from "../../../components/Button/Button"
 import "./Search.scss";
 
 class Search extends Component {
@@ -36,26 +37,21 @@ class Search extends Component {
                {value => {
                 const {dispatch} = value;
                    return (
-                       <div className="card card-body mb-4 p-4">
-                           <h1 className="display-4 text-center">
-                               <i className="fas fa-music"></i>Search For a Song
-                           </h1>
-                           <p className="lead text-center"> Get the Lyrics for any song</p>
+                       <div className="searchBar">
                            <form onSubmit={this.findTrack.bind(this, dispatch)}>
                                <div className="form-group">
                                    <input 
                                    type="text"
-                                   className="form-control form-control-lg"
-                                   placeholder="Song title..."
+                                   placeholder="Enter A Song Title"
                                    name="trackTitle"
                                    value={this.state.trackTitle}
                                    onChange={this.onChange}
                                    />
                                </div>
-                               <button className="btn btn-primary btn-lg btn-block mb-5" 
+                               <Button className="SearchButton justify-content-center" 
                               type="submit">
-                                   Get Track Lyrics
-                               </button>
+                                Search Lyrics
+                               </Button>
                            </form>
                        </div>
                    )
