@@ -5,6 +5,15 @@
     font-size: 2.5rem;
     background-color: $color-black;
     background-image: linear-gradient(115deg, $color-black 0%, $color-primary 54%);
+
+&__links{
+  position: absolute;
+  right: 0;
+}
+  }
+
+.navbar-toggler{
+  background-color: pink;
 }
 
 .navbar-brand{
@@ -23,10 +32,25 @@
   -moz-text-fill-color: transparent;
     
 }
-.nav-link{
-&:link,
-&:visited {
+
+
+.nav-item {
+  backface-visibility: hidden;
   color: $color-white;
+  display: block;
+  padding: 0.5em 1em;
+  position: relative;
+  text-align: center;
   text-decoration: none;
-}
+
+  &:hover {
+    background-color: $color-white;
+    border: 2px solid $color-primary;
+    color: $color-primary;
+    -webkit-transition: all 0.2s ease;
+    transition: all 1s ease;
+    
+  }
+
+
 }

@@ -9,16 +9,14 @@ const Navbar = () => {
   <Link to="/">
 <span className="navbar-brand mb-0 justify-content-start">Jam Matez</span>
 </Link>
-  <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-    <span className="navbar-toggler-icon"></span>
-  </button>
 
-  <div className="collapse navbar-collapse justify-content-end navLinks">
+
+  <span className="navbar__links">
   <ul className="nav">
     {/* goes to SBindex.js(Spotify playlist makers) */}
     <Link to="/SBindex">
   <li className="nav-item">
-    <div className="nav-link active">Build Jamz</div>
+    <div className="nav-link">Build Jamz</div>
   </li>
   </Link>
 
@@ -35,7 +33,7 @@ const Navbar = () => {
   </li>
   </Link>
 </ul>
-  </div>
+  </span>
 </nav>
 
     )

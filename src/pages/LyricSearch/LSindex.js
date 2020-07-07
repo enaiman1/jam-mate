@@ -5,8 +5,10 @@ import Search from "./Search/Search";
 const LSbody = () => {
   return (
     <>
+    <div className="container">
       <Search />
       <Tracks />
+      </div>
     </>
   );
 };
