@@ -37,8 +37,8 @@ class Search extends Component {
                {value => {
                 const {dispatch} = value;
                    return (
-                       <div className="searchBar">
-                           <form onSubmit={this.findTrack.bind(this, dispatch)}>
+                       <div className="searchBar ">
+                           <form  onSubmit={this.findTrack.bind(this, dispatch)}>
                                <div className="form-group">
                                    <input 
                                    type="text"
@@ -48,10 +48,10 @@ class Search extends Component {
                                    onChange={this.onChange}
                                    />
                                </div>
-                               <Button className="SearchButton justify-content-center" 
+                                  <Button className="searchButton"
                               type="submit">
                                 Search Lyrics
-                               </Button>
+                               </Button>  
                            </form>
                        </div>
                    )

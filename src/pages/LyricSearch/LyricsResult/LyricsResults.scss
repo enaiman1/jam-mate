@@ -3,13 +3,14 @@
 .LyricsResults {
     width: 60%;
     height: 95rem;
-    margin-right: 2rem;
+    margin: 2rem auto;
     overflow-y: scroll;
     padding: 1rem;
     background-color: rgba($color-primary-dark, 0.7);
     box-shadow: 0 4px 2px 2px $color-black;
     text-align: center;
     font-family: 'Cinzel Decorative', cursive;
+    justify-content: center;
 
     &__title{
       font-size: 3rem;

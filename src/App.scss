@@ -46,7 +46,16 @@ html {
   // this defines what 1 rem is
   font-size: 62.5%; //1rem = 10px 10px/16px = 62.5%
 background-color: $color-black;
+@media only screen and (max-width: $bp-largest) {
+  font-size: 60%;
+}
 
+@media only screen and (max-width: $bp-medium) {
+font-size: 50%;
+}
+@media only screen and (max-width: $bp-small) {
+  font-size: 45%;
+}
   
 }
 
@@ -54,11 +63,6 @@ background-color: $color-black;
 body {
   box-sizing: border-box;
   line-height: 1.7;
-
-  
-  
-  
-  
   font-family: 'Playfair Display', serif;
   // font-family: 'Cinzel Decorative', cursive;
   // font-family: 'Sedgwick Ave Display', cursive;

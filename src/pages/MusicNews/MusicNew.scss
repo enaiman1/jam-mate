@@ -1,0 +1,14 @@
+@import"../../App.scss";
+
+.musicNews{
+    height: 100vh;
+    padding: 0 17% 10% 17%;
+    background:   linear-gradient( to bottom,
+    rgba($color-primary,.3),
+    rgba($color-primary,.6)),url('../../assets/img/speaker.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
