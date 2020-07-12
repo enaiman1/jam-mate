@@ -3,21 +3,24 @@
 .LyricsResults {
     width: 60%;
     height: 95rem;
-    margin: 2rem auto;
-    overflow-y: scroll;
+    margin: 2rem auto; 
     padding: 1rem;
     background-color: rgba($color-primary-dark, 0.7);
     box-shadow: 0 4px 2px 2px $color-black;
     text-align: center;
     font-family: 'Cinzel Decorative', cursive;
     justify-content: center;
-
+ overflow-y: scroll;
+ 
     &__title{
       font-size: 3rem;
       margin-bottom: 2rem;
       border-bottom: 1px solid $color-grey-dark-2;
        color: $color-white;
   
+  }
+  @media only screen and (max-width: $bp-small) {
+   width: 85%;
   }
   }
   

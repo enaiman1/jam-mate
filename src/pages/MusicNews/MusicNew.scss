@@ -13,6 +13,7 @@
     background-repeat: no-repeat;
     overflow-x: hidden;
     overflow-y: auto;
+    overflow-y: scroll;
 
     &__title{
         width: 70%;
@@ -36,8 +37,8 @@
         @media only screen and (max-width: $bp-small) {
             position: absolute;
             left: 15%;
-            overflow-x: hidden;
-            overflow-y: auto;
+            padding: 1rem;
+        
           }
     }
 }

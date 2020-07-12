@@ -7,7 +7,7 @@ import "./Landing.module.scss";
 const Landing = () =>{
     return (
         <header className={classes.header}>
-      <video autoPlay="autoplay" loop="loop" muted className={classes.Video}>
+      <video playsInline autoPlay="autoplay" loop="loop" muted className={classes.Video}>
         <source src={VideoSource} type="video/mp4" />
         <source src={VideoSource} type="video/ogg" />
         Your browser does not support the video tag.

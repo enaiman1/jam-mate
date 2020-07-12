@@ -11,6 +11,8 @@
     background-repeat: no-repeat;
     font-weight: 500;
     color: $color-white;
+    overflow-x: hidden;
+    overflow-y: auto;
   }
   
   .SBindex-playlist {
