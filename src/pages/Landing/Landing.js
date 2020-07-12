@@ -10,10 +10,11 @@ const Landing = () =>{
     return (
         <header className={classes.header}>
 
-      <video playsInline="playsinline" autoPlay="autoplay" loop="loop" autoBuffer="autobuffer" poster={Poster} className={classes.Video}>
+      <video playsInline="playsinline" autoPlay="autoplay" loop="loop" autoBuffer="autobuffer" className={classes.Video}>
         <source src={VideoSource} type="video/mp4" />
         <source src={VideoSource} type="video/ogg" />
         <source src={VideoSourceM} type="video/webm"/>  
+        <img src={Poster} alt=""/>
         Your browser does not support the video tag.
       </video>
       <div className={classes.header__textBox}>  

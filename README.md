@@ -1,6 +1,5 @@
-read me example
 # Descrption
-This is a starter MERN application with Passport user authentication using Javascript Web Tokens and Redux
+This is a starter React that allows user to embrace the music they love
 
 
 ## Demo
