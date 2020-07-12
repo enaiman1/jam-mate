@@ -4,9 +4,10 @@
     height: 100vh;
     width: 100%;
     padding: 2rem;
+   
     background:   linear-gradient( to bottom,
-    rgba($color-primary,.3),
-    rgba($color-primary,.6)),url('../../assets/img/speaker.jpg');
+    rgba($color-primary, .3),
+    rgba($color-primary, .6)),url('../../assets/img/speaker.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -29,6 +30,9 @@
     }
 
     &__body{
+        height: 85%;
+         margin-bottom: 2rem;
+
         @media only screen and (max-width: $bp-small) {
             position: absolute;
             left: 15%;

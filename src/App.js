@@ -9,6 +9,7 @@ import LSindex from "./pages/LyricSearch/LSindex";
 import Lyrics from "./pages/LyricSearch/Lyrics/Lyrics";
 import MusicNews from "./pages/MusicNews/MusicNew";
 import NoMatch from "./pages/NoMatch";
+import Footer from "./components/Footer/Footer"
 
 
 import './App.scss';
@@ -26,10 +27,9 @@ function App() {
 <Route exact path="/lyrics/track/:id" component={Lyrics} />
 <Route exact path="/MusicNews" component={MusicNews} />
 <Route component={NoMatch} />
-
    </Switch>
+<Footer />
 </Router>
-
       </Provider>
      
    <Landing />
