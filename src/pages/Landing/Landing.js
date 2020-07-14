@@ -10,7 +10,7 @@ const Landing = () =>{
     return (
         <header className={classes.header}>
 
-      <video playsInline="playsinline" autoPlay="autoplay" loop="loop" muted autoBuffer="autobuffer"className={classes.Video}>
+      <video playsInline="playsinline" autoPlay="autoplay" loop="loop" muted autoBuffer="autobuffer" className={classes.Video}>
         <source src={VideoSource} type="video/mp4" />
         <source src={VideoSource} type="video/ogg" />
         <img src={Poster} alt="Dj on a turn table"/>
