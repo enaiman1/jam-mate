@@ -17,3 +17,4 @@ To install dependencies make sure to run:
 ```npm install```
 To run full app: 
 ```npm start```
+_________________
